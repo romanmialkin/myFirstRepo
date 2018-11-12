@@ -1,0 +1,23 @@
+#!/bin/bash  - key to launch bash
+open filename - open file
+open -a AplicationName FileName
+ls - list of files in directory
+ls -l - more information of files
+echo "something "- write something in file 
+# - comment
+diff - compare files
+man diff - help for command diff
+
+«ctrl + \» is equal «ctrl + break» in Windows cmd
+fn+ctrl+F3 - access to Dock
+fn+F4 - launchpad
+cmd+tab <select app> + alt - show minimized app
+ctrl+space - spotlight
+cmd+shift+3 - screenshot full display
+cmd+shift+4 - screenshot part of display
+space - enter in window
+ifconfig - equal ipconfig in Windows (en0  - WiFi, en3 - thunderbolt 1, en4 - thunderbolt 2)
+ctrl+fn+F2 - Меню программы
+sysctl -n machdep.cpu.brand_string    -   модель процессора
+cmd+alt+esc - диспетчер задач
+cd '/Volumes/Macintosh HD/' - переход в каталог с соствным именем
