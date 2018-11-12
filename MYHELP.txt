@@ -20,4 +20,5 @@ ifconfig - equal ipconfig in Windows (en0  - WiFi, en3 - thunderbolt 1, en4 - 
 ctrl+fn+F2 - Меню программы
 sysctl -n machdep.cpu.brand_string    -   модель процессора
 cmd+alt+esc - диспетчер задач
-cd '/Volumes/Macintosh HD/' - переход в каталог с соствным именем
+cd '/Volumes/Macintosh HD/' - переход в каталог с составным именем
+
