@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{8ECCDEF7-1D2C-41BE-9BE3-37326BDA8063}|Default">
+  <MonoDevelop.Ide.ItemProperties.simpleTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="simpleTest/simpleTest.cs">
+    <Files>
+      <File FileName="simpleTest/simpleTest.cs" Line="24" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="simpleTest" expanded="True">
+            <Node name="simpleTest" expanded="True">
+              <Node name="simpleTest" expanded="True">
+                <Node name="simpleTest" expanded="True">
+                  <Node name="simpleTest2" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
