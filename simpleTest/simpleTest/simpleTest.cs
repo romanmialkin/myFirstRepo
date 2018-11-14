@@ -1,5 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+
 namespace simpleTest
 {   
     [TestFixture]
@@ -7,7 +10,16 @@ namespace simpleTest
     {
         static void Main(string[] args)
         {
-            
+            SelTest();
+        }
+
+        public static void SelTest()
+        {
+            var chrome = new ChromeDriver();
+            chrome.Navigate().GoToUrl("http://www.google.com/");
+            System.Threading.Thread.Sleep(5000);
+            chrome.Quit();
+
         }
 
         [Test]
