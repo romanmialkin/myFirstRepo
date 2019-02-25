@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{585283AF-3F47-4F49-99A7-4303388882BD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VectorRotation/RotationalMatrix.cs">
+    <Files>
+      <File FileName="VectorRotation/Program.cs" Line="1" Column="1" />
+      <File FileName="VectorRotation/Vector.cs" Line="20" Column="10" />
+      <File FileName="VectorRotation/Orientation.cs" Line="16" Column="10" />
+      <File FileName="VectorRotation/RotationalMatrix.cs" Line="10" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.VectorRotation FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
