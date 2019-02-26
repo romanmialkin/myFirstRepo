@@ -6,18 +6,20 @@ namespace VectorRotation
     {
         static void Main(string[] args)
         {
-            var vector1 = new Vector(1, 0, 0);
-            var orient = new Orientation(Math.PI , Math.PI , Math.PI );
+            var vector1 = new Vector(5, 2, 1);
+            var orient = new Orientation(Math.PI, Math.PI, Math.PI / 4 );
             var matrixX = RotationalMatrix.SetMatrixX(orient.Roll);
             var matrixY = RotationalMatrix.SetMatrixY(orient.Pitch);
             var matrixZ = RotationalMatrix.SetMatrixZ(orient.Yaw);
 
-            var matrixXY = RotationalMatrix.MultMatrix(matrixX, matrixY);
-            var matrixXYZ = RotationalMatrix.MultMatrix(matrixXY, matrixZ);
+            //var matrixXY = RotationalMatrix.MultMatrix(matrixX, matrixY);
+            //var matrixXYZ = RotationalMatrix.MultMatrix(matrixXY, matrixZ);
 
-            var newVector = RotationalMatrix.MultMatrixVector(matrixXYZ, vector1);
+            var newVector = RotationalMatrix.MultMatrixVector(matrixX, vector1);
+            var newVector2 = RotationalMatrix.MultMatrixVector(matrixY, newVector);
+            var resVector = RotationalMatrix.MultMatrixVector(matrixZ, newVector2);
 
-            Console.WriteLine(newVector);
+            Console.WriteLine(resVector);
             Console.ReadLine();
         }
     }

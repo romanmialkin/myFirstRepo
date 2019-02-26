@@ -6,9 +6,6 @@ namespace VectorRotation
     public class RotationalMatrix
     {
         public double[,] Matrix { get; set; }
-
-        public RotationalMatrix() { }
-
         public RotationalMatrix(double[,] matrix)
         {
             Matrix = matrix;
