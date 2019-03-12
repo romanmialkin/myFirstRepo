@@ -15,9 +15,14 @@ namespace VectorRotation
             var matrixXY = RotationalMatrix.MultMatrix(matrixX, matrixY);
             var matrixXYZ = RotationalMatrix.MultMatrix(matrixXY, matrixZ);
 
-            var newVector = RotationalMatrix.MultMatrixVector(matrixXYZ, vector1);
+            var newVector = RotationalMatrix.MultMatrixVector(matrixX, vector1);
+            var newVector2 = RotationalMatrix.MultMatrixVector(matrixY, newVector);
+            var resVector = RotationalMatrix.MultMatrixVector(matrixZ, newVector2);
 
-            Console.WriteLine(newVector);
+            var rV = RotationalMatrix.MultMatrixVector(matrixXYZ, vector1);
+
+            Console.WriteLine(resVector);
+            Console.WriteLine(rV);
             Console.ReadLine();
         }
     }

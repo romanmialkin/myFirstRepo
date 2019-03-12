@@ -1,12 +1,5 @@
 ﻿<Properties StartupConfiguration="{585283AF-3F47-4F49-99A7-4303388882BD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VectorRotation/Program.cs">
-    <Files>
-      <File FileName="VectorRotation/Program.cs" Line="10" Column="70" />
-      <File FileName="VectorRotation/Vector.cs" Line="19" Column="48" />
-      <File FileName="VectorRotation/Orientation.cs" Line="16" Column="10" />
-      <File FileName="VectorRotation/RotationalMatrix.cs" Line="53" Column="71" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="../../../VectorRotation/RotationalMatrix.cs" line="51" offsetX="788" offsetY="926" expression="matrixXY.Matrix.[0, 0]" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
