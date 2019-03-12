@@ -1,0 +1,11 @@
+<Object type="Geometry" version="1">
+	<Property>
+        Form
+    </Property>
+    <SubObjects>
+        <SubObject type="Shape" vertNumber="5">Pentagon</SubObject>
+        <SubObject type="Shape" vertNumber="4">Rectangle</SubObject>
+        <SubObject type="3DShape" vertNumber="0">Cilinder</SubObject>
+        <SubObject type="Line" vertNumber="0">Line</SubObject>
+    </SubObjects>	
+</Object>

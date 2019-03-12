@@ -7,7 +7,7 @@ namespace VectorRotation
         static void Main(string[] args)
         {
             var vector1 = new Vector(1, 0, 0);
-            var orient = new Orientation(Math.PI , Math.PI , Math.PI );
+            var orient = new Orientation(Math.PI / 2, Math.PI / 2 , Math.PI / 2);
             var matrixX = RotationalMatrix.SetMatrixX(orient.Roll);
             var matrixY = RotationalMatrix.SetMatrixY(orient.Pitch);
             var matrixZ = RotationalMatrix.SetMatrixZ(orient.Yaw);
