@@ -32,22 +32,29 @@ namespace readInfoXmlModelDependencies
             //var sourcePath = @"\\pfile01\p100\Nemo\Models.DeployAll-2.5.1\Models.DeployAll_2.5.1-20190311.1";
             
 
-            var sourcePath = @"c:\ProgramData\Kongsberg\Nemo\System\Object\";
+            //var sourcePath = @"c:\ProgramData\Kongsberg\Nemo\System\Object\";
+            //
+            //foreach (var name in objNames)
+            //{
+            //    Console.WriteLine(name);
+            //    Directory.CreateDirectory(Path.Combine(destPath, name));
+            //    var files = Directory.GetFiles(Path.Combine(sourcePath, name));
+            //
+            //    foreach (var file in files)
+            //    {
+            //        File.Copy(file, Path.Combine(destPath, name, Path.GetFileName(file)).
+            //            Replace(Path.Combine(sourcePath, name), 
+            //                Path.Combine(destPath, name, Path.GetFileName(file))), true);
+            //    }
+            //    
+            //}
 
-            foreach (var name in objNames)
+            var path = @"c:\users\RomanM\Desktop\Obj\";
+
+            foreach (var dir in Directory.GetDirectories(path))
             {
-                Console.WriteLine(name);
-                Directory.CreateDirectory(Path.Combine(destPath, name));
-                var files = Directory.GetFiles(Path.Combine(sourcePath, name));
-
-                foreach (var file in files)
-                {
-                    File.Copy(file, Path.Combine(destPath, name, Path.GetFileName(file)).
-                        Replace(Path.Combine(sourcePath, name), 
-                            Path.Combine(destPath, name, Path.GetFileName(file))), true);
-                }
-                
-            }
+                Console.WriteLine(dir);
+            } 
 
             Console.ReadLine();
 

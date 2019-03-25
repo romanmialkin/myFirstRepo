@@ -20,3 +20,6 @@
 /.vs
 /CopyDirsFromXml/.vs/readInfoXmlModelDependencies/v15
 /CopyDirsFromXml/readInfoXmlModelDependencies/obj
+/CopyDirsFromXml/readInfoXmlModelDependencies/bin/Debug/readInfoXmlModelDependencies.pdb
+/CopyDirsFromXml/readInfoXmlModelDependencies/bin/Debug/readInfoXmlModelDependencies.exe.config
+/CopyDirsFromXml/readInfoXmlModelDependencies/bin/Debug/readInfoXmlModelDependencies.exe
