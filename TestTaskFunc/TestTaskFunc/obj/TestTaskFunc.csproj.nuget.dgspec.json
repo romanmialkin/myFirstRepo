@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\git\\myFirstRepo\\TestTaskFunc\\TestTaskFunc\\TestTaskFunc.csproj": {}
+  },
+  "projects": {
+    "F:\\git\\myFirstRepo\\TestTaskFunc\\TestTaskFunc\\TestTaskFunc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\git\\myFirstRepo\\TestTaskFunc\\TestTaskFunc\\TestTaskFunc.csproj",
+        "projectName": "TestTaskFunc",
+        "projectPath": "F:\\git\\myFirstRepo\\TestTaskFunc\\TestTaskFunc\\TestTaskFunc.csproj",
+        "packagesPath": "C:\\Users\\RomanM\\.nuget\\packages\\",
+        "outputPath": "F:\\git\\myFirstRepo\\TestTaskFunc\\TestTaskFunc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RomanM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://maritimesim.pkgs.visualstudio.com/_packaging/Sim/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

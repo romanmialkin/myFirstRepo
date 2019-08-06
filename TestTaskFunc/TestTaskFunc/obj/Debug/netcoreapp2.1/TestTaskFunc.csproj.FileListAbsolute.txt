@@ -1,0 +1,8 @@
+F:\git\myFirstRepo\TestTaskFunc\TestTaskFunc\bin\Debug\netcoreapp2.1\TestTaskFunc.deps.json
+F:\git\myFirstRepo\TestTaskFunc\TestTaskFunc\bin\Debug\netcoreapp2.1\TestTaskFunc.dll
+F:\git\myFirstRepo\TestTaskFunc\TestTaskFunc\obj\Debug\netcoreapp2.1\TestTaskFunc.csproj.CoreCompileInputs.cache
+F:\git\myFirstRepo\TestTaskFunc\TestTaskFunc\obj\Debug\netcoreapp2.1\TestTaskFunc.AssemblyInfoInputs.cache
+F:\git\myFirstRepo\TestTaskFunc\TestTaskFunc\obj\Debug\netcoreapp2.1\TestTaskFunc.AssemblyInfo.cs
+F:\git\myFirstRepo\TestTaskFunc\TestTaskFunc\bin\Debug\netcoreapp2.1\TestTaskFunc.pdb
+F:\git\myFirstRepo\TestTaskFunc\TestTaskFunc\obj\Debug\netcoreapp2.1\TestTaskFunc.dll
+F:\git\myFirstRepo\TestTaskFunc\TestTaskFunc\obj\Debug\netcoreapp2.1\TestTaskFunc.pdb
