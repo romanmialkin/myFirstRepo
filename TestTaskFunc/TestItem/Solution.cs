@@ -16,54 +16,53 @@ namespace TestItem
             return x.Item1.CompareTo(y.Item1);
         }
     }
-
-    [TestFixture]
-    public class Solution
+    public static class Solver
     {
         public static IEnumerable<int[]> TwoSum(int[] nums, int target)
         {
             var newNums = nums.Select((n, k) => Tuple.Create(n, k)).OrderBy(t => t.Item1).ToList();
-            
+
             var vc = new ValueComparer();
 
-            //var output = new List<int[]>();
             for (int i = 0; i < newNums.Count; i++)
             {
                 var firstValue = newNums[i].Item1;
-                
+
                 var index = newNums.BinarySearch(new Tuple<int, int>(target - firstValue, 0), vc);
 
-                if (index > 0)
+                if (index > 0 && firstValue < newNums[index].Item1)
                 {
-                    yield return new[]{newNums[i].Item2, newNums[index].Item2};
+                    yield return new[] { newNums[i].Item2, newNums[index].Item2 };
                 }
             }
-
-            //return output;
         }
-        
-        public static IEnumerable<int[]> ExpectedIndexes
+    }
+
+
+    [TestFixture]
+    public class Solution
+    {
+        private static readonly int[] numbers = { 1, 4, 7, 6, 12, 9, 16 };
+        private static readonly int target = 10;
+        public static IEnumerable<TestCaseData> ExpectedIndexes
         {
             get
             {
-                yield return new[] { 0, 5 };
-                yield return new[] { 1, 3 };
-                yield return new[] { 3, 1 };
+                yield return new TestCaseData(new[] { 0, 5 }, 0, numbers, target);
+                yield return new TestCaseData(new[] { 1, 4 }, 1, numbers, target); //TODO: Index 4 is incorrect
             }
         }
 
-        [Test]
-        public static void UnitTest1()
+        [Test, TestCaseSource(typeof(Solution), nameof(ExpectedIndexes))]
+        public static void UnitTest1(int[] expectedIndexes, int index, int[] numbers, int target)
         {
-            var numbers = new[] { 1, 4, 7, 6, 12, 9, 16};
-            var target = 10;
             
             
-            CollectionAssert.AreEqual(ExpectedIndexes, TwoSum(numbers, target));
-            
-            
+            CollectionAssert.AreEqual(expectedIndexes, Solver.TwoSum(numbers, target).ElementAt(index));
+            Assert.That(Solver.TwoSum(numbers, target).ElementAt(index), Is.EqualTo(expectedIndexes));
 
         }
+        
 
     }
 
