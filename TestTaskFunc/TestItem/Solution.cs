@@ -26,6 +26,7 @@ namespace TestItem
             
             var vc = new ValueComparer();
 
+            //var output = new List<int[]>();
             for (int i = 0; i < newNums.Count; i++)
             {
                 var firstValue = newNums[i].Item1;
@@ -34,24 +35,34 @@ namespace TestItem
 
                 if (index > 0)
                 {
-                    var output = new[] { newNums[i].Item2, newNums[index].Item2 };
-                    yield return output;
+                    yield return new[]{newNums[i].Item2, newNums[index].Item2};
                 }
+            }
+
+            //return output;
+        }
+        
+        public static IEnumerable<int[]> ExpectedIndexes
+        {
+            get
+            {
+                yield return new[] { 0, 5 };
+                yield return new[] { 1, 3 };
+                yield return new[] { 3, 1 };
             }
         }
 
-        public static IEnumerable<int[]> ExpectedIndexes
+        [Test]
+        public static void UnitTest1()
         {
-            get { yield return new[] {1, 6}; }
-        }
-
-        [Test, TestCaseSource(nameof(ExpectedIndexes))]
-        public static void UnitTest1(int[] expectedIndexes)
-        {
-            var numbers = new[] {-5, 1, 4, 7, 8, 12, 9, 16};
+            var numbers = new[] { 1, 4, 7, 6, 12, 9, 16};
             var target = 10;
             
-            CollectionAssert.AreEqual(expectedIndexes,TwoSum(numbers, target).FirstOrDefault());
+            
+            CollectionAssert.AreEqual(ExpectedIndexes, TwoSum(numbers, target));
+            
+            
+
         }
 
     }
