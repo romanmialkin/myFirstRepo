@@ -42,29 +42,49 @@ namespace TestItem
     [TestFixture]
     public class Solution
     {
-        private static readonly int[] numbers = { 1, 4, 7, 6, 12, 9, 16 };
-        private static readonly int target = 10;
-        public static IEnumerable<TestCaseData> ExpectedIndexes
+        private static readonly int[] numbersArray = { 1, 4, 7, 6, 12, 9, 16 };
+        private static readonly int targetVaulue = 10;
+        public static IEnumerable<MyTestCaseData> ExpectedIndexes
         {
             get
             {
-                yield return new TestCaseData(new[] { 0, 5 }, 0, numbers, target);
-                yield return new TestCaseData(new[] { 1, 4 }, 1, numbers, target); //TODO: Index 4 is incorrect
+                yield return new MyTestCaseData(new[] { 0, 5 }, 0, numbersArray, targetVaulue);
+                yield return new MyTestCaseData(new[] { 1, 3 }, 1, numbersArray, targetVaulue);
             }
         }
 
         [Test, TestCaseSource(typeof(Solution), nameof(ExpectedIndexes))]
-        public static void UnitTest1(int[] expectedIndexes, int index, int[] numbers, int target)
+        public static void UnitTest1(MyTestCaseData caseData)
         {
-            
-            
-            CollectionAssert.AreEqual(expectedIndexes, Solver.TwoSum(numbers, target).ElementAt(index));
-            Assert.That(Solver.TwoSum(numbers, target).ElementAt(index), Is.EqualTo(expectedIndexes));
+            Assert.That(Solver.TwoSum(caseData.Numbers, caseData.Target).ElementAt(caseData.IndexData), 
+                Is.EqualTo(caseData.ExpectedIndex));
 
         }
         
 
     }
+    public class MyTestCaseData
+    {
+        public MyTestCaseData(int[] expected, int index, int[] numbers, int target)
+        {
+            ExpectedIndex = expected;
+            IndexData = index;
+            Numbers = numbers;
+            Target = target;
+        }
+        public int[] ExpectedIndex { get;}
+        public int IndexData { get;}
+        public int[] Numbers { get;}
+        public int Target { get;}
+        public override string ToString()
+        {
+            var str1 = $@"Indexes: [{ExpectedIndex[0]}, {ExpectedIndex[1]}], #";
+            var str2 = IndexData.ToString();
+            
+            return str1 + str2;
+        }
+    }
+
 
 
 }

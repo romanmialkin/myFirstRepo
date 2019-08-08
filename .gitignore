@@ -24,3 +24,12 @@
 /CopyDirsFromXml/readInfoXmlModelDependencies/bin/Debug/readInfoXmlModelDependencies.exe.config
 /CopyDirsFromXml/readInfoXmlModelDependencies/bin/Debug/readInfoXmlModelDependencies.exe
 /GetUrls/.vs/GetUrls/v15
+/GetUrls/GetUrls/bin/Debug
+/GetUrls/GetUrls/obj/Debug
+/GetUrls/packages
+/TestTaskFunc/TestItem/bin/Debug/netcoreapp2.1
+/TestTaskFunc/.vs/TestTaskFunc/v16
+/TestTaskFunc/.vs/TestTaskFunc
+/TestTaskFunc/TestItem/obj/Debug/netcoreapp2.1
+/GetUrls/GetUrls/Data
+/TestTaskFunc/TestItem/obj
