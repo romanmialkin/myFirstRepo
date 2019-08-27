@@ -8,7 +8,7 @@ namespace jsonWriter
         Nurse
     }
 
-    public abstract class Specialist : Person
+    public class Specialist : Person
     {
         public int SubId { get; set; }
         public SpecialistType SpecialistType { get; set; }
@@ -23,5 +23,10 @@ namespace jsonWriter
             SpecialistType = specialistType;
             RoomNumber = roomNumber;
         }
+        public override string ToString()
+        {
+            return $@"{Id} {SpecialistType} {LastName} {Name}";
+        }
+
     }
 }

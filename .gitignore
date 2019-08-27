@@ -1,35 +1,18 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/xmlReader/xmlReader/obj/Release/netcoreapp2.1/xmlReader.csproj.CoreCompileInputs.cache
-/xmlReader/xmlReader/obj/Release/netcoreapp2.1/xmlReader.AssemblyInfoInputs.cache
-/xmlReader/xmlReader/obj/Release/netcoreapp2.1/xmlReader.AssemblyInfo.cs
-/xmlReader/xmlReader/obj/Release/netcoreapp2.1
-/xmlReader/xmlReader/obj/Debug/netcoreapp2.1/xmlReader.csproj.CoreCompileInputs.cache
-/xmlReader/xmlReader/obj/Debug/netcoreapp2.1/xmlReader.AssemblyInfoInputs.cache
-/xmlReader/xmlReader/obj/Debug/netcoreapp2.1/xmlReader.AssemblyInfo.cs
-/xmlReader/xmlReader/obj/Debug/netcoreapp2.1
-/xmlReader/xmlReader/obj
-/VectorRotation/VectorRotation/obj
-/VectorRotation/VectorRotation/bin/Debug/netcoreapp2.1
-/VectorRotation
-/simpleTest/simpleTest/obj/x86
-/firstProject/firstProject/obj
-/CustomConversions/CustomConversions/obj
-/.vs
-/CopyDirsFromXml/.vs/readInfoXmlModelDependencies/v15
-/CopyDirsFromXml/readInfoXmlModelDependencies/obj
-/CopyDirsFromXml/readInfoXmlModelDependencies/bin/Debug/readInfoXmlModelDependencies.pdb
-/CopyDirsFromXml/readInfoXmlModelDependencies/bin/Debug/readInfoXmlModelDependencies.exe.config
-/CopyDirsFromXml/readInfoXmlModelDependencies/bin/Debug/readInfoXmlModelDependencies.exe
-/GetUrls/.vs/GetUrls/v15
-/GetUrls/GetUrls/bin/Debug
-/GetUrls/GetUrls/obj/Debug
-/GetUrls/packages
-/TestTaskFunc/TestItem/bin/Debug/netcoreapp2.1
-/TestTaskFunc/.vs/TestTaskFunc/v16
-/TestTaskFunc/.vs/TestTaskFunc
-/TestTaskFunc/TestItem/obj/Debug/netcoreapp2.1
-/GetUrls/GetUrls/Data
-/TestTaskFunc/TestItem/obj
+CopyDirsFromXml/readInfoXmlModelDependencies/obj/
+	CustomConversions/.vs/
+	TestTaskFunc/.vs/
+	TestTaskFunc/TestItem/EmptyClass.cs
+	TestTaskFunc/TestItem/bin/
+	TestTaskFunc/TestItem/obj/
+	VectorRotation/VectorRotation/bin/
+	VectorRotation/VectorRotation/obj/
+	jsonWriter/.vs/
+	jsonWriter/jsonWriter/.vscode/
+	jsonWriter/jsonWriter/bin/
+	jsonWriter/jsonWriter/obj/
+	simpleTest/packages/
+	simpleTest/simpleTest/bin/
+	simpleTest/simpleTest/obj/
+	xmlReader/.vs/
+	xmlReader/xmlReader/bin/
+	xmlReader/xmlReader/obj/
