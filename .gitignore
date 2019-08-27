@@ -1,18 +1,18 @@
 CopyDirsFromXml/readInfoXmlModelDependencies/obj/
-	CustomConversions/.vs/
-	TestTaskFunc/.vs/
-	TestTaskFunc/TestItem/EmptyClass.cs
-	TestTaskFunc/TestItem/bin/
-	TestTaskFunc/TestItem/obj/
-	VectorRotation/VectorRotation/bin/
-	VectorRotation/VectorRotation/obj/
-	jsonWriter/.vs/
-	jsonWriter/jsonWriter/.vscode/
-	jsonWriter/jsonWriter/bin/
-	jsonWriter/jsonWriter/obj/
-	simpleTest/packages/
-	simpleTest/simpleTest/bin/
-	simpleTest/simpleTest/obj/
-	xmlReader/.vs/
-	xmlReader/xmlReader/bin/
-	xmlReader/xmlReader/obj/
+CustomConversions/.vs/
+TestTaskFunc/.vs/
+TestTaskFunc/TestItem/EmptyClass.cs
+TestTaskFunc/TestItem/bin/
+TestTaskFunc/TestItem/obj/
+VectorRotation/VectorRotation/bin/
+VectorRotation/VectorRotation/obj/
+jsonWriter/.vs/
+jsonWriter/jsonWriter/.vscode/
+jsonWriter/jsonWriter/bin/
+jsonWriter/jsonWriter/obj/
+simpleTest/packages/
+simpleTest/simpleTest/bin/
+simpleTest/simpleTest/obj/
+xmlReader/.vs/
+xmlReader/xmlReader/bin/
+xmlReader/xmlReader/obj/
