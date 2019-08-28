@@ -8,10 +8,6 @@ namespace simpleTest
     [TestFixture]
     public class simpleTest
     {
-        static void Main(string[] args)
-        {
-            SelTest();
-        }
 
         public static void SelTest()
         {
