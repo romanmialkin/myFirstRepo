@@ -25,9 +25,9 @@ namespace TestItem
                 {
                     var firstIndex = newNums[i].Item2;
                     var secondIndex = newNums[i + 1].Item2;
-
-                    yield return firstIndex > secondIndex ? new[] { secondIndex, firstIndex }
-                        : new[] { firstIndex, secondIndex };
+                    if (newNums[i].Item1 + newNums[i + 1].Item1 == target)
+                        yield return firstIndex > secondIndex ? new[] { secondIndex, firstIndex }
+                            : new[] { firstIndex, secondIndex };
                 }
 
                 if (index > 0 && firstValue < newNums[index].Item1)
@@ -70,6 +70,8 @@ namespace TestItem
                 yield return new MyTestCaseData(new[] { 0, 3 }, 0, new[] { 1, 0, 0, 1 }, 2);
                 yield return new MyTestCaseData(new[] { 0, 3 }, 0, new[] { -1, 0, 0, -1 }, -2);
                 yield return new MyTestCaseData(new[] { 1, 3 }, 0, new[] { 0, 2, 2, 1 }, 3);
+                yield return new MyTestCaseData(new[] { 1, 2 }, 0, new[] { 1, 5, 12, 4 }, 10); //fix test
+                yield return new MyTestCaseData(new[] { 1, 3 }, 0, new[] { 1, 5, 12, 5 }, 10);
             }
         }
 
