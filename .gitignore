@@ -1,5 +1,14 @@
+.vs/
+CopyDirsFromXml/.vs/
+CopyDirsFromXml/readInfoXmlModelDependencies/bin/
 CopyDirsFromXml/readInfoXmlModelDependencies/obj/
 CustomConversions/.vs/
+CustomConversions/CustomConversions/obj/
+GetUrls/.vs/
+GetUrls/GetUrls/Data/
+GetUrls/GetUrls/bin/
+GetUrls/GetUrls/obj/
+GetUrls/packages/
 TestTaskFunc/.vs/
 TestTaskFunc/TestItem/EmptyClass.cs
 TestTaskFunc/TestItem/bin/
@@ -15,6 +24,12 @@ simpleTest/simpleTest/bin/
 simpleTest/simpleTest/obj/
 xmlReader/.vs/
 xmlReader/xmlReader/bin/
+xmlReader/xmlReader/obj/       
+VectorRotation/.vs/VectorRotation/v15/
+VectorRotation/.vscode/
+VectorRotation/VectorRotation.sln.DotSettings.user
+VectorRotation/VectorRotation/.vscode/
+firstProject/firstProject/obj/
 xmlReader/xmlReader/obj/
 GetPostRequests/GetPostRequests/bin/
 
