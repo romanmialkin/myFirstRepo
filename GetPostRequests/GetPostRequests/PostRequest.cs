@@ -8,9 +8,6 @@ namespace GetPostRequests
 {
     public class PostRequest
     {
-        public PostRequest()
-        {
-        }
         public async void PostReq(IUriParams uri)
         {
             var client = new HttpClient() { BaseAddress = new Uri(uri.Uri) };

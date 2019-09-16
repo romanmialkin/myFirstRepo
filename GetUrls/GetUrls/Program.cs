@@ -21,7 +21,7 @@ namespace GetUrls
             //jsonGetter.GetJsonFile();
             //jsonGetter.GetJsonWebClient();
             
-            //jsonGetter.GetGitUrls();
+            jsonGetter.GetGitUrls();
 
 
 

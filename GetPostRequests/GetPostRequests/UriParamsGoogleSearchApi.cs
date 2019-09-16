@@ -3,10 +3,10 @@ namespace GetPostRequests
 {
     public class UriParamsGoogleSearchApi : IUriParams
     {
-        public UriParamsGoogleSearchApi(string uri, string key, string searchEngine, string query)
+        public UriParamsGoogleSearchApi(UriGoogleSearchParams uriParams)
         {
-            Uri = uri;
-            UriParameters = $"?key={key}&cx={searchEngine}&q={query}";
+            Uri = uriParams.Uri;
+            UriParameters = $"?key={uriParams.Key}&cx={uriParams.SearchEngine}&q={uriParams.Query}";
         }
 
         public string Uri { get; set; }
